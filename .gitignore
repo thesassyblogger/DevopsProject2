@@ -1,0 +1,30 @@
+@'
+# --- Terraform ---
+**/.terraform/*
+**/.terraform/providers/*
+**/.terraform/modules/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+.terraformrc
+terraform.rc
+
+# Keys & certs
+*.pem
+*.key
+*.pfx
+*.cer
+*.crt
+*.csr
+*.der
+
+# Node/IDE/OS
+node_modules/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+'@ | Out-File -Encoding ascii .gitignore
